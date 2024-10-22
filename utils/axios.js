@@ -2,7 +2,7 @@ import axios from "axios";
 //import { useRouter } from "next/navigation";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000", // Adjust to your Flask backend's base URL
+  baseURL: process.env.NEXT_PUBLIC_API_URL, // Adjust to your Flask backend's base URL
   headers: {
     "Content-Type": "application/json",
   },
